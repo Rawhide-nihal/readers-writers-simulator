@@ -6,9 +6,7 @@ import {
   PlayCircle,
   Cpu,
   BarChart3,
-  ScrollText,
-  BookOpen,
-  Info
+  ScrollText
 } from 'lucide-react';
 
 export const Sidebar: React.FC = () => {
@@ -19,8 +17,6 @@ export const Sidebar: React.FC = () => {
     { to: '/visualizer', label: 'Live Visualizer', icon: Cpu },
     { to: '/analytics', label: 'Performance Analytics', icon: BarChart3 },
     { to: '/logs', label: 'Activity Logs', icon: ScrollText },
-    { to: '/explainer', label: 'Algorithm Explainer', icon: BookOpen },
-    { to: '/about', label: 'About Project', icon: Info },
   ];
 
   return (

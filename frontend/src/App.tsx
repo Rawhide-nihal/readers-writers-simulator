@@ -7,8 +7,6 @@ import { SimulationControlPage } from './pages/SimulationControlPage';
 import { LiveVisualizerPage } from './pages/LiveVisualizerPage';
 import { AnalyticsPage } from './pages/AnalyticsPage';
 import { ActivityLogsPage } from './pages/ActivityLogsPage';
-import { AlgorithmExplainerPage } from './pages/AlgorithmExplainerPage';
-import { AboutPage } from './pages/AboutPage';
 import { api } from './services/api';
 import { wsService } from './services/websocket';
 import { EngineStatus, EngineEvent, ThreadNode, Account, SimState, SyncPolicy } from './types';
@@ -186,8 +184,6 @@ export const App: React.FC = () => {
               />
             }
           />
-          <Route path="/explainer" element={<AlgorithmExplainerPage />} />
-          <Route path="/about" element={<AboutPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>
