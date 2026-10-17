@@ -1,0 +1,54 @@
+# C Build artifacts
+engine/build/
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+syncdb_engine
+test_correctness
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# SQLite Database dynamic files
+database/*.sqlite3
+database/*.sqlite3-wal
+database/*.sqlite3-shm
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+
+# Python backend
+backend/venv/
+backend/.venv/
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node / React Frontend
+frontend/node_modules/
+frontend/dist/
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.vite/
+
+# Editor / System artifacts
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Temporary logs
+*.log
